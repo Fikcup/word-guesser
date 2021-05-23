@@ -2,7 +2,6 @@ var words = ["Apple", "Cucumber", "Banana", "Onion", "Horse"];
 var guessesRemaining;
 var wordsIndex;
 var word;
-var letter;
 var grabButton = document.querySelectorAll("button");
 
 function chooseWord()
@@ -20,7 +19,7 @@ function incorrectGuesses()
 function checkLetter()
 {
     // Pull the value of the button and declare it as letter
-    letter = document.getElementsByClassName("letter").value;
+    const letter = this.value;
     console.log(letter);
 
     // Read the value of the button for If statement    
@@ -39,6 +38,5 @@ chooseWord();
 incorrectGuesses();
 
 grabButton.forEach(button => {
-    button.addEventListener("click", function() { checkLetter() });
-    console.log(button);
+    button.addEventListener("click", checkLetter);
 });
