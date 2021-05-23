@@ -1,4 +1,4 @@
-var words = ["Apple", "Cucumber", "Banana", "Onion", "Horse"];
+var words = ["APPLE", "CUCUMBER", "BANANA", "ONION", "HORSE"];
 var guessesRemaining;
 var wordsIndex;
 var word;
@@ -8,6 +8,8 @@ function chooseWord()
 {
     wordsIndex = Math.floor(Math.random() * (words.length - 1));
     word = words[wordsIndex];
+
+    console.log(word);
 }
 
 function incorrectGuesses()
@@ -18,20 +20,18 @@ function incorrectGuesses()
 
 function checkLetter()
 {
-    // Pull the value of the button and declare it as letter
     const letter = this.value;
-    console.log(letter);
+    console.log(letter);    
 
-    // Read the value of the button for If statement    
-
-   /* if (word.contains(letter))
+   if (word.includes(letter))
     {
         console.log("Correct guess");
     }
     else
     {
         guessesRemaining--;
-    } */
+        console.log("You have " + guessesRemaining + " guesses remaining.")
+    }
 }
 
 chooseWord();
