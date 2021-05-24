@@ -14,6 +14,13 @@ function displayWord()
     // Hide characters not guessed and display as underscores
 }
 
+function guessesDisplay()
+{
+    var outputGuesses = document.getElementById("guessesRemaining");
+
+    outputGuesses.innerHTML = guessesRemaining;
+}
+
 function chooseWord()
 {
     wordsIndex = Math.floor(Math.random() * (words.length - 1));
@@ -46,6 +53,7 @@ function checkLetter()
     }
 
     this.style.backgroundColor = 'Black';
+    guessesDisplay();
 }
 
 chooseWord();
