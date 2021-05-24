@@ -4,18 +4,8 @@ var wordsIndex;
 var word;
 var letter;
 var grabButton = document.querySelectorAll("button");
-
-function displayWord()
-{
-    var output = document.getElementById("guessWord");
-
-    for (let i = 0; i < word.length; i++)
-    {
-        output.innerHTML += "_ ";
-    }
-
-    // Display guessed characters instead of underscores
-}
+var answerArray = [];
+var remainingLetters;
 
 function guessesDisplay()
 {
@@ -33,6 +23,20 @@ function chooseWord()
     displayWord();
 }
 
+function displayWord()
+{
+    remainingLetters = word.length;
+    var output = document.getElementById("guessWord");
+
+    for (let i = 0; i < word.length; i++)
+    {
+        answerArray[i] = "_";
+    }
+
+    answerArray.join("");
+    output.innerHTML = answerArray;
+}
+
 function incorrectGuesses()
 {
     guessesRemaining = Math.floor(words[wordsIndex].length / 2);
@@ -48,10 +52,24 @@ function checkLetter()
     {
         // Have letter appear and remove the underscore
         console.log("Correct guess");
+        if (remainingLetters > 0)
+        {
+            for (var j = 0; j < word.length; j++)
+            {
+                if (answerArray[j] == letter)
+                {
+                    answerArray[j] = letter;
+                }
+                console.log(answerArray[j]);
+            }
+        }
+
+        remainingLetters--;
     }
     else
     {
         guessesRemaining--;
+        
         if (guessesRemaining == 0) 
         {
             alert("You lose. Refresh and try again");
