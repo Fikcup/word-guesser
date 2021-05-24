@@ -37,15 +37,15 @@ function checkLetter()
    if (word.includes(letter))
     {
         // Have letter appear and remove the underscore
-        // Discolor the button to show that it has been clicked
         console.log("Correct guess");
     }
     else
     {
-        // Discolor the button to show that it has been clicked
         guessesRemaining--;
         console.log("You have " + guessesRemaining + " guesses remaining.")
     }
+
+    this.style.backgroundColor = 'Black';
 }
 
 chooseWord();
