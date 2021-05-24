@@ -43,7 +43,7 @@ function updateDisplayWord()
 
     if (answerArray.includes('_') == false)
     {
-        alert("You win!");
+        alert("You win! The word was " + words[wordsIndex] + ".");
     }
 }
 
@@ -81,7 +81,7 @@ function checkLetter()
         
         if (guessesRemaining == 0) 
         {
-            alert("You lose. Refresh and try again");
+            alert("You lose. The word was " + words[wordsIndex] + ". Refresh and try again");
         }
         else
         {
