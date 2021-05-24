@@ -13,7 +13,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[Word Guesser Screenshot](https://files.slack.com/files-pri/T01MVUSEAVD-F022CLFV2SK/image.png)
+[Word Guesser Screenshot](https://media.discordapp.net/attachments/810364865419673631/846285994160160779/image.png?width=960&height=520)
 
 
 ### Built With
