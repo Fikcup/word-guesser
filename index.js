@@ -18,8 +18,6 @@ function chooseWord()
 {
     wordsIndex = Math.floor(Math.random() * (words.length - 1));
     word = words[wordsIndex];
-
-    console.log(word);
     displayWord();
 }
 
@@ -57,12 +55,10 @@ function incorrectGuesses()
 
 function checkLetter()
 {
-    letter = this.value;
-    console.log(letter);    
+    letter = this.value;    
 
    if (word.includes(letter))
     {
-        // Have letter appear and remove the underscore
         console.log("Correct guess");
         if (remainingLetters > 0)
         {
@@ -71,12 +67,10 @@ function checkLetter()
                 if (word[j] == letter)
                 {
                     answerArray[j] = letter;
-                    console.log(answerArray[j]);
                 }
             }
 
             updateDisplayWord();
-            console.log(answerArray);
         }
 
         remainingLetters--;
