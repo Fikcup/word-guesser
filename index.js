@@ -1,4 +1,4 @@
-var words = ["APPLE", "CUCUMBER", "BANANA", "ONION", "HORSE"];
+var words = ["APPLE", "CUCUMBER", "BANANA", "ONION", "HORSE", "BANJO", "SUBWAY", "GAZEBO", "OXYGEN", "JAWBREAKER", "CRYPT", "HAZARD", "GOSSIP", "FUNNY", "BUFFALO", "COBWEB", "JACKPOT", "JIGSAW", "PUZZLE", "HANGMAN", "DUPLEX", "CYCLE", "JOCKEY", "JOGGING", "RUNNING", "WALKING", "JUKEBOX", "RECORD", "KAYAK", "CANOE", "QUEUE", "POOL"];
 var guessesRemaining;
 var wordsIndex;
 var word;
