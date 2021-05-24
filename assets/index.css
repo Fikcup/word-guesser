@@ -1,0 +1,50 @@
+body
+{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%
+}
+
+body div
+{
+    text-align: center;
+}
+
+#title h1
+{
+    font-size: 35px;
+}
+
+#title h2
+{
+    font-size: 25px;
+}
+
+#guessWord
+{
+    font-size: 55px;
+    color: red;
+}
+
+button
+{
+    margin: 5px;
+    padding: 20px;
+}
+
+#incorrect
+{
+    font-size: 20px;
+}
+
+#guessesRemaining
+{
+    font-style: bold;
+}
+
+#word
+{
+    background-color: beige;
+    padding: 10px;
+    margin-bottom: 20px;
+}
