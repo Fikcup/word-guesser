@@ -9,9 +9,12 @@ function displayWord()
 {
     var output = document.getElementById("guessWord");
 
-    output.innerHTML = word;
+    for (let i = 0; i < word.length; i++)
+    {
+        output.innerHTML += "_ ";
+    }
 
-    // Hide characters not guessed and display as underscores
+    // Display guessed characters instead of underscores
 }
 
 function guessesDisplay()
@@ -49,7 +52,14 @@ function checkLetter()
     else
     {
         guessesRemaining--;
-        console.log("You have " + guessesRemaining + " guesses remaining.")
+        if (guessesRemaining == 0) 
+        {
+            alert("You lose. Refresh and try again");
+        }
+        else
+        {
+            console.log("You have " + guessesRemaining + " guesses remaining.");
+        }
     }
 
     this.style.backgroundColor = 'Black';
