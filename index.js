@@ -42,6 +42,11 @@ function updateDisplayWord()
     var output = document.getElementById("guessWord");
     answerArray.join("");
     output.innerHTML = answerArray;
+
+    if (answerArray.includes('_') == false)
+    {
+        alert("You win!");
+    }
 }
 
 function incorrectGuesses()
