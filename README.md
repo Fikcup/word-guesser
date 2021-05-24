@@ -1,31 +1,57 @@
-# Word Guesser! 
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h3 align="center">Word Guesser</h3>
 
-This application will be a lot like hangman - you get a predetermined word or phrase and the user must click the letter buttons to attempt guessing the word or phrase. Criteria below!
+  <p align="center">
+    Word guessing game similar to hangman applying JavaScript logic and using HTML and CSS to display.
+    <br />
+  </p>
+</p>
 
-## Basic
 
-- Words only
-- Users get half as many incorrect guesses as the length of the word (rounded down)
-    - Ex: The word is "curry" they would be allowed 2 incorrect guesses
-- Buttons do not change color once they have been chosen
-- No need for "already guessed letters"
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Advanced
+[Word Guesser Screenshot](https://files.slack.com/files-pri/T01MVUSEAVD-F022CLFV2SK/image.png)
 
-- Words and phrases
-- Users get half as many incorrect guesses as the length of the word (rounded down)
-    - Ex: The word is "curry" they would be allowed 2 incorrect guesses
-    - Spaces and special characters do not count in the length
-- Spaces and special characters are shown to the users from the beginning
-    - Ex: "You're cool" will be "_ _ _ ' _ _ &nbsp; _ _ _ _" at the start of the game
-- Add a restart game button (without refreshing the page!)
 
-## Super Advanced!!!
+### Built With
 
-Seriously don't do this unless you have a TON of time AND patience lol
+* [JavaScript](https://www.javascript.com/)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-- All functionality of Advanced game
-- All OOP
-- Implement a Game, World, and Letter class to run the game
 
-&nbsp; is a space character in markdown if you can see it as "&nbsp;" press ctrl+shift+v to see the markdown preview so that this formats correctly
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/github_username/repo_name.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+
+<!-- CONTACT -->
+## Contact
+
+Rhys Wright - [@fikrysoft](https://twitter.com/fikrysoft) - rhys.n.wright@gmail.com
+
+Project Link: [Word Guesser](https://github.com/Fikcup/password-generator-js)
