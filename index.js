@@ -37,6 +37,13 @@ function displayWord()
     output.innerHTML = answerArray;
 }
 
+function updateDisplayWord()
+{
+    var output = document.getElementById("guessWord");
+    answerArray.join("");
+    output.innerHTML = answerArray;
+}
+
 function incorrectGuesses()
 {
     guessesRemaining = Math.floor(words[wordsIndex].length / 2);
@@ -56,12 +63,15 @@ function checkLetter()
         {
             for (var j = 0; j < word.length; j++)
             {
-                if (answerArray[j] == letter)
+                if (word[j] == letter)
                 {
                     answerArray[j] = letter;
+                    console.log(answerArray[j]);
                 }
-                console.log(answerArray[j]);
             }
+
+            updateDisplayWord();
+            console.log(answerArray);
         }
 
         remainingLetters--;
