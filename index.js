@@ -16,6 +16,7 @@ function guessesDisplay()
 
 function chooseWord()
 {
+    // Chooses a random integer that coincides with words[index]
     wordsIndex = Math.floor(Math.random() * (words.length - 1));
     word = words[wordsIndex];
     displayWord();
@@ -26,6 +27,7 @@ function displayWord()
     remainingLetters = word.length;
     var output = document.getElementById("guessWord");
 
+    // Initializes word displayed as underscores
     for (let i = 0; i < word.length; i++)
     {
         answerArray[i] = "_";
@@ -41,6 +43,7 @@ function updateDisplayWord()
     answerArray.join("");
     output.innerHTML = answerArray;
 
+    // Win condition met when _ have all been replaced by letters
     if (answerArray.includes('_') == false)
     {
         alert("You win! The word was " + words[wordsIndex] + ".");
@@ -49,6 +52,7 @@ function updateDisplayWord()
 
 function incorrectGuesses()
 {
+    // Half the word length rounded down equals number of incorrect guesses
     guessesRemaining = Math.floor(words[wordsIndex].length / 2);
     console.log(guessesRemaining);
 }
@@ -57,13 +61,16 @@ function checkLetter()
 {
     letter = this.value;    
 
+    // If word contains the clicked letter
    if (word.includes(letter))
     {
-        console.log("Correct guess");
+        // And the win condition hasn't been met
         if (remainingLetters > 0)
         {
+            // Iterate through the word until letter's index is found
             for (var j = 0; j < word.length; j++)
             {
+                // Replace underscore with letter
                 if (word[j] == letter)
                 {
                     answerArray[j] = letter;
@@ -79,23 +86,23 @@ function checkLetter()
     {
         guessesRemaining--;
         
+        // If you have no guesses remaining lose condition has been met
         if (guessesRemaining == 0) 
         {
             alert("You lose. The word was " + words[wordsIndex] + ". Refresh and try again");
         }
-        else
-        {
-            console.log("You have " + guessesRemaining + " guesses remaining.");
-        }
     }
 
+    // Changes the color of clicked buttons
     this.style.backgroundColor = 'Black';
     guessesDisplay();
 }
 
+// Initializes intro functions
 chooseWord();
 incorrectGuesses();
 
+// Creates event listener for each button
 grabButton.forEach(button => {
     button.addEventListener("click", checkLetter);
 });
