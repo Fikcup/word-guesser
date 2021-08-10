@@ -13,7 +13,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[Word Guesser Screenshot](https://media.discordapp.net/attachments/810364865419673631/846285994160160779/image.png?width=960&height=520)
+![Word Guesser Screenshot](https://media.discordapp.net/attachments/810364865419673631/846285994160160779/image.png?width=960&height=520)
+Project Link: [Word Guesser](https://fikcup.github.io/word-guesser/)
 
 
 ### Built With
@@ -41,17 +42,11 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/Fikcup/word-guesser.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
+2. Run the HTML file
 
 <!-- CONTACT -->
 ## Contact
 
 Rhys Wright - [@fikrysoft](https://twitter.com/fikrysoft) - rhys.n.wright@gmail.com
-
-Project Link: [Word Guesser](https://github.com/Fikcup/password-generator-js)
