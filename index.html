@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<body>
-    <header>
-        <link rel="stylesheet" href="./assets/index.css">
-    </header>
+<head>
+    <link rel="stylesheet" href="./assets/index.css">
+    <title>Word Guesser</title>
+</head>
 
-    <div id="title">
+<body>
+    <!-- Main Header -->
+    <header id="title">
         <h1>Game of Fortune</h1>
         <h2>Guess the word or phrase!</h2>
-    </div>
+    </header>
 
+    <!-- Word Guessing -->
     <div id="word">
         <p id="guessWord"></p>
         <p id="incorrect">Incorrect Guesses Left: <span id="guessesRemaining"></span></p>
     </div>
 
+    <!-- Guess Letters -->
     <div id="letters">
         <button class="letter" value="A">A</button>
         <button class="letter" value="B">B</button>
