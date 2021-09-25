@@ -7,20 +7,20 @@ var grabButton = document.querySelectorAll("button");
 var answerArray = [];
 var remainingLetters;
 
-function guessesDisplay() {
+const guessesDisplay = () => {
     var outputGuesses = document.getElementById("guessesRemaining");
 
     outputGuesses.innerHTML = guessesRemaining;
 }
 
-function chooseWord() {
+const chooseWord = () => {
     // Chooses a random integer that coincides with words[index]
     wordsIndex = Math.floor(Math.random() * (words.length - 1));
     word = words[wordsIndex];
     displayWord();
 }
 
-function displayWord() {
+const displayWord = () => {
     remainingLetters = word.length;
     var output = document.getElementById("guessWord");
 
@@ -33,7 +33,7 @@ function displayWord() {
     output.innerHTML = answerArray;
 }
 
-function updateDisplayWord() {
+const updateDisplayWord = () => {
     var output = document.getElementById("guessWord");
     answerArray.join("");
     output.innerHTML = answerArray;
@@ -44,17 +44,17 @@ function updateDisplayWord() {
     }
 }
 
-function incorrectGuesses() {
+const incorrectGuesses = () => {
     // Half the word length rounded down equals number of incorrect guesses
     guessesRemaining = Math.floor(words[wordsIndex].length / 2);
     console.log(guessesRemaining);
 }
 
-function checkLetter() {
+function checkLetter () {
     letter = this.value;    
 
     // If word contains the clicked letter
-   if (word.includes(letter)) {
+    if (word.includes(letter)) {
         // And the win condition hasn't been met
         if (remainingLetters > 0) {
             // Iterate through the word until letter's index is found
