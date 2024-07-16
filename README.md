@@ -41,4 +41,4 @@ To get a local copy up and running follow these simple steps.
 <!-- CONTACT -->
 ## Contact
 
-Rhys Wright - [@fikrysoft](https://twitter.com/fikrysoft) - rhys.n.wright@gmail.com
+Rhys Wright - rhys.n.wright@gmail.com
